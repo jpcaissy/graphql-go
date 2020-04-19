@@ -50,6 +50,10 @@ type Schema struct {
 	extensions      []*Extension
 }
 
+func (s *Schema) AddObject(object *Object) {
+	s.objects = append(s.objects, object)
+}
+
 // Resolve a named type in the schema by its name.
 func (s *Schema) Resolve(name string) common.Type {
 	return s.Types[name]
