@@ -3,8 +3,8 @@ package introspection
 import (
 	"sort"
 
-	"github.com/graph-gophers/graphql-go/internal/common"
-	"github.com/graph-gophers/graphql-go/internal/schema"
+	"github.com/jpcaissy/graphql-go/external/common"
+	"github.com/jpcaissy/graphql-go/external/schema"
 )
 
 type Schema struct {

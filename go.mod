@@ -1,5 +1,5 @@
-module github.com/graph-gophers/graphql-go
+module github.com/jpcaissy/graphql-go
+
+go 1.14
 
 require github.com/opentracing/opentracing-go v1.1.0
-
-go 1.13
