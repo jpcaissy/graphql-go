@@ -73,6 +73,10 @@ type Schema struct {
 	disableIntrospection  bool
 }
 
+func (s *Schema) GetSchema() *schema.Schema {
+	return s.schema
+}
+
 // SchemaOpt is an option to pass to ParseSchema or MustParseSchema.
 type SchemaOpt func(*Schema)
 
