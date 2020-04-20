@@ -99,11 +99,9 @@ func Parse(queryString string) (*Document, *errors.QueryError) {
 	var doc *Document
 	err := l.CatchSyntaxError(func() { doc = parseDocument(l) })
 	if err != nil {
-		fmt.Println("### got errors")
 		return nil, err
 	}
 
-	fmt.Println("### got NO errors")
 	return doc, nil
 }
 

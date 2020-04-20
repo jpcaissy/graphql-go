@@ -69,7 +69,6 @@ func Validate(s *schema.Schema, doc *query.Document, variables map[string]interf
 	opNames := make(nameSet)
 	fragUsedBy := make(map[*query.FragmentDecl][]*query.Operation)
 	for _, op := range doc.Operations {
-		fmt.Printf("Validating %+v\n", op)
 		c.usedVars[op] = make(varSet)
 		opc := &opContext{c, []*query.Operation{op}}
 
