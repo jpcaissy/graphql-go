@@ -183,7 +183,7 @@ func validateValue(c *opContext, v *common.InputValue, val interface{}, t common
 	switch t := t.(type) {
 	case *common.NonNull:
 		if val == nil {
-			c.addErr(v.Loc, "VariablesOfCorrectType", "Variable \"%s\" has invalid value null.\nExpected type \"%s\", found null.", v.Name.Name, t)
+			c.addErr(v.Loc, "VariablesOfCorrectType", "Variable \"%s\" has invalid value null. Expected type \"%s\", found null.", v.Name.Name, t)
 			return
 		}
 		validateValue(c, v, val, t.OfType)
